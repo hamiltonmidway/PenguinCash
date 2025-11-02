@@ -2,10 +2,6 @@
 // these are the Themes for Penguin Cash
 // 12 themes (6 standard + 6 large font) – Accessibility + Full Font Scaling
 
-
-// src/pages/Themes.jsx
-// Penguin Cash Theme Selector – Accessibility + Full Font Scaling
-
 import { useState, useEffect } from "react";
 
 const THEMES = [
@@ -33,16 +29,33 @@ const THEMES = [
     accent: "#2b6cb0",
     font: "'Gabarito', sans-serif",
   },
-  // 4. E-Ink
+  // 4. Hash Browns
+  {
+    name: "Hash Browns",
+    bg: "#F9F6F1",         // warm off-white paper
+    text: "#3E2C23",       // rich coffee brown
+    accent: "#A47E5E",     // light latte tone
+    font: "'Coffee', monospace",
+    matte: true,
+  },
+  // 5. Twin Pines Mall
+  {
+    name: "Twin Pines Mall",
+    bg: "#0c0c0c",
+    text: "#f8fafc",
+    accent: "#5C8C5A",
+    font: "'US101', monospace",
+  },
+  // 6. E-Ink
   {
     name: "E-Ink",
     bg: "#F4F2EC",
     text: "#333333",
     accent: "#666666",
-    font: "'Momo Trust Display', sans-serif",
+    font: "'Russo One', sans-serif",
     matte: true,
   },
-  // 5. Experience 1983
+  // 7. Experience 1983
   {
     name: "Experience 1983",
     bg: "#0c0c0c",
@@ -52,7 +65,7 @@ const THEMES = [
     uppercase: true,
     glow: false,
   },
-  // 6. Experience 1985
+  // 8. Experience 1985
 {
   name: "Experience 1985",
   bg: "#eaeaea",          // classic Macintosh beige/grey window tone
@@ -87,12 +100,29 @@ const THEMES = [
     font: "'Gabarito', sans-serif",
     largeFont: true,
   },
+    {
+    name: "Hash Browns (Larger Fonts)",
+    bg: "#F9F6F1",         // warm off-white paper
+    text: "#3E2C23",       // rich coffee brown
+    accent: "#A47E5E",     // light latte tone
+    font: "'Coffee', monospace",
+    matte: true,
+    largeFont: true,
+  },
+    {
+    name: "Twin Pines Mall (Larger Fonts)",
+    bg: "#0c0c0c",
+    text: "#f8fafc",
+    accent: "#5C8C5A",
+    font: "'US101', monospace",
+    largeFont: true,
+  },
   {
     name: "E-Ink (Larger Fonts)",
     bg: "#F4F2EC",
     text: "#333333",
     accent: "#666666",
-    font: "'Momo Trust Display', sans-serif",
+    font: "'Russo One', sans-serif",
     matte: true,
     largeFont: true,
   },
